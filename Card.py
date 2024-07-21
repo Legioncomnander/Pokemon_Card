@@ -50,12 +50,12 @@ department_name = st.sidebar.selectbox(
 
 class_name = st.sidebar.selectbox(
     "Select Generation",
-    (1,2,3,4,5,6)
+    (select_all_option,1,2,3,4,5,6)
 )
 
 rating = st.sidebar.selectbox(
     "Select Legendary",
-    (True,False)
+    (select_all_option,True,False)
 )
 
 # Add "Select All" option

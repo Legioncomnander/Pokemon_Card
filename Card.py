@@ -60,7 +60,7 @@ rating = st.sidebar.selectbox(
 
 # Add "Select All" option
 pokemon_list = sorted(df['Name'].unique())
-selectvalue = st.selectbox("Select your Pokemon, and you can also Select All", pokemon_list + [select_all_option])
+selectvalue = st.selectbox("Select your Pokemon, and you can also Select All", [select_all_option] + pokemon_list)
 
 # Filter data berdasarkan pilihan di sidebar
 filtered_df = df.copy()

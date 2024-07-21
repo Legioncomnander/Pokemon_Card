@@ -32,7 +32,7 @@ right: 2rem;
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Load data
-df = pd.read_csv("../Pokemon_Card/Data_pokemon.csv")
+df = pd.read_csv("../Pokemon_Card/blob/main/Data_pokemon.csv")
 
 # Side Bar
 st.sidebar.header("Filter by Type, Generation, and Legendary 🦕️")

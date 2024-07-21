@@ -81,7 +81,7 @@ if rating != select_all_option:
 if selectvalue != select_all_option:
     selected_pokemons = filtered_df[filtered_df['Name'] == selectvalue]
 else:
-    selected_pokemons = filtered_df
+    selected_pokemons = filtered_df.head()
 
 
 st.markdown(f"<div style='font-size: 40px; font-weight: bold; text-align: center;'>Pokemon 🐉️</div>", unsafe_allow_html=True)

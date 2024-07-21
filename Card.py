@@ -40,7 +40,7 @@ select_all_option = "Select All"
 
 division_name = st.sidebar.selectbox(
     "Pokemon Type 1",
-    options=np.append(df["Type 1"].unique(),select_all_option)
+    options=np.append(select_all_option, df["Type 1"].unique())
 )
 
 department_name = st.sidebar.selectbox(
@@ -55,7 +55,7 @@ class_name = st.sidebar.selectbox(
 
 rating = st.sidebar.selectbox(
     "Select Legendary",
-    (True,False,select_all_option)
+    (select_all_option,True,False)
 )
 
 # Add "Select All" option
